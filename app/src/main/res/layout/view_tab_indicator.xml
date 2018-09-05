@@ -23,7 +23,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_marginTop="@dimen/s_5"
             android:background="@drawable/bg_indicator" />
     </LinearLayout>
 </LinearLayout>
