@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.bird.trill.widget.ShortVideoPlayerView
+            android:id="@+id/video_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/play_arrow" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/head_portrait"
+            android:layout_width="@dimen/s_50"
+            android:layout_height="@dimen/s_50"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/s_65"
+            android:layout_marginStart="@dimen/s_15"
+            app:riv_border_color="@android:color/white"
+            app:riv_border_width="1dp"
+            app:riv_corner_radius="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="118dp"
+            android:layout_marginStart="@dimen/s_15"
+            android:background="@drawable/bg_round_translucent_black"
+            android:drawablePadding="@dimen/s_5"
+            android:drawableStart="@mipmap/ic_short_video_position"
+            android:paddingBottom="@dimen/s_5"
+            android:paddingEnd="@dimen/s_10"
+            android:paddingStart="@dimen/s_10"
+            android:paddingTop="@dimen/s_5"
+            android:text="南京市建邺区"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/head_portrait"
+            android:layout_marginStart="@dimen/s_3"
+            android:layout_marginTop="@dimen/s_3"
+            android:layout_toEndOf="@id/head_portrait"
+            android:text="至尊宝和紫霞仙子"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_marginStart="@dimen/s_3"
+            android:layout_toEndOf="@id/head_portrait"
+            android:text="一段芭蕾舞献给大家，谢谢"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_15" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/s_65"
+            android:layout_marginEnd="@dimen/s_15"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/s_5"
+                android:drawableTop="@mipmap/ic_short_video_good"
+                android:gravity="center"
+                android:text="6.0W"
+                android:textColor="#FFE8E6E7" />
+
+            <TextView
+                android:id="@+id/btn_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s_40"
+                android:layout_marginTop="@dimen/s_20"
+                android:drawablePadding="@dimen/s_5"
+                android:drawableTop="@mipmap/ic_short_video_bad"
+                android:gravity="center"
+                android:text="6.0W"
+                android:textColor="#FFE8E6E7" />
+
+            <ImageView
+                android:id="@+id/take"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_short_video_take" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
