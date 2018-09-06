@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/record_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rate_bar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <TextView
+                    android:id="@+id/rate_quarter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.98"
+                    android:background="@drawable/svideo_switch_music_select_left"
+                    android:gravity="center"
+                    android:text="@string/rate_very_slow"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rate_half"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/svideo_switch_music_select"
+                    android:gravity="center"
+                    android:text="@string/rate_slow"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rate_origin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/svideo_switch_music_select"
+                    android:gravity="center"
+                    android:text="@string/rate_standard"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rate_double"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/svideo_switch_music_select"
+                    android:gravity="center"
+                    android:text="@string/rate_fast"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rate_double_power2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.98"
+                    android:background="@drawable/svideo_switch_music_select_right"
+                    android:gravity="center"
+                    android:text="@string/rate_very_fast"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/record_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/svideo_snap_record_state_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

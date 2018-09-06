@@ -1,39 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-    <android.support.v4.app.FragmentTabHost
-        android:id="@+id/tab_host"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clipChildren="false">
 
         <FrameLayout
-            android:id="@android:id/tabcontent"
+            android:id="@+id/tab_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
             android:clipChildren="false"
-            android:gravity="center"
             android:orientation="vertical">
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@drawable/divider" />
 
-            <TabWidget
-                android:id="@android:id/tabs"
+            <RadioGroup
+                android:id="@+id/tab_host"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:clipChildren="false" />
+                android:layout_height="49dp"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tb_video"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/tab_indicator"
+                    android:gravity="center"
+                    android:text="发现"
+                    android:textColor="@color/tab_text_color"
+                    android:textSize="@dimen/s_20" />
+
+                <RadioButton
+                    android:id="@+id/tb_concern"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/tab_indicator"
+                    android:gravity="center"
+                    android:text="关注"
+                    android:textColor="@color/tab_text_color"
+                    android:textSize="@dimen/s_20" />
+
+                <ImageView
+                    android:id="@+id/btn_camera"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/s_65"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_launcher" />
+
+                <RadioButton
+                    android:id="@+id/tb_news"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/tab_indicator"
+                    android:gravity="center"
+                    android:text="消息"
+                    android:textColor="@color/tab_text_color"
+                    android:textSize="@dimen/s_20" />
+
+                <RadioButton
+                    android:id="@+id/tb_me"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/tab_indicator"
+                    android:gravity="center"
+                    android:text="我的"
+                    android:textColor="@color/tab_text_color"
+                    android:textSize="@dimen/s_20" />
+            </RadioGroup>
         </LinearLayout>
-    </android.support.v4.app.FragmentTabHost>
+    </FrameLayout>
 </layout>

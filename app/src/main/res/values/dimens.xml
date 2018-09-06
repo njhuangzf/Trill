@@ -12,4 +12,5 @@
     <dimen name="s_65">65dp</dimen>
     <dimen name="s_40">40dp</dimen>
     <dimen name="s_20">20dp</dimen>
+    <dimen name="s_30">30dp</dimen>
 </resources>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1296db</color>
+    <color name="colorPrimary">#00c2dd</color>
     <color name="colorPrimaryDark">#1296db</color>
     <color name="colorAccent">#1296db</color>
+    <color name="text_black">#333333</color>
+    <color name="rate_item_select_bg">#00c2dd</color>
+    <color name="white_opacity_60pct">#99FFFFFF</color>
+
 </resources>

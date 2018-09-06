@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">抖音</string>
     <string name="being_built">Being built</string>
+    <string name="rate_very_slow">极慢</string>
+    <string name="rate_slow">慢</string>
+    <string name="rate_standard">标准</string>
+    <string name="rate_fast">快</string>
+    <string name="rate_very_fast">极快</string>
 </resources>
