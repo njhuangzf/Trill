@@ -6,4 +6,5 @@
     <string name="rate_standard">标准</string>
     <string name="rate_fast">快</string>
     <string name="rate_very_fast">极快</string>
+    <string name="need_permission">请给予相应的权限</string>
 </resources>
